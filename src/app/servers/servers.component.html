@@ -1,2 +1,4 @@
-<app-server>  </app-server>
-<app-server>  </app-server>
+<p>{{'Server'}} with ID {{ serverID }} is {{ getServerStatus() }} </p>
+
+<button class="btn btn-primary" [disabled]="!allowNewServer" >Update Server</button>
+
