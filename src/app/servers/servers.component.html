@@ -1,4 +1,4 @@
-<p>{{'Server'}} with ID {{ serverID }} is {{ getServerStatus() }} </p>
+
 
 <!-- <input type="text" class="form-control" (input)="onUpdateServerName($event)"> -->
 <input type="text" class="form-control" [(ngModel)]="serverName">
@@ -13,4 +13,7 @@
 <ng-template #noServer>
 <p>No server was created</p>
 </ng-template>
+<p>{{'Server'}} with ID {{ serverID }} is {{ getServerStatus() }} </p>
+
+<app-server *ngFor="let server of servers"></app-server>
 
